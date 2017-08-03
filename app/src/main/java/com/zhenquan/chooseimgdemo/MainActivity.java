@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String demoImage2 = "demo2.jpg";
     //裁剪保存的文件名
     private String demoImage = "demo.jpg";
+    private Button btn_third_part;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +53,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
         mBtn_choose_image = (Button) findViewById(R.id.btn_choose_image);
         mBtn_choose_imageandCrop = (Button) findViewById(R.id.btn_choose_imageandCrop);
+        btn_third_part = (Button) findViewById(R.id.btn_third_part);
         mTxt_path = (TextView) findViewById(R.id.txt_path);
         mImage = (ImageView) findViewById(R.id.image);
         mBtn_choose_imageandCrop.setOnClickListener(this);
         mBtn_choose_image.setOnClickListener(this);
+        btn_third_part.setOnClickListener(this);
     }
 
     private void initPath() {
@@ -126,7 +129,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_choose_imageandCrop:
                 mChooseImageUtil.showTypeDialog(CHOOSE_IMAGE_FROM_GALLRY2, CHOOSE_IMAGE_FROM_CAMERA2, demoImage2);
                 break;
-
+            case R.id.btn_third_part:
+                break;
             default:
                 break;
 

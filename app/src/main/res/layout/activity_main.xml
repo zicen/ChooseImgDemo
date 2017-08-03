@@ -24,7 +24,11 @@
         android:textAllCaps="false"
         android:id="@+id/btn_choose_imageandCrop"
         android:text="选择图片并裁剪"/>
-
+    <Button
+        android:text="跳转到第三方选取图片和拍照的界面"
+        android:id="@+id/btn_third_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 <TextView
     android:layout_width="match_parent"
     android:id="@+id/txt_path"
